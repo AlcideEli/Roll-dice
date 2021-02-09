@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Roll dice</title>
+</head>
+
+<body>
+    <ion-grid>
+        <ion-app>
+            <ion-content>
+                <ion-row class="row-newGame">
+                    <button id='newGame'><img src="images/add-circle-outline.svg" alt="new game button" id="newGame-icon">NEW GAME</button>
+                </ion-row>
+                <ion-row class="main">
+                    <ion-col class="col1">
+                        <div id="background1"></div>
+                        <div class="player-cell">
+                            <div id="Player1">PLAYER 1
+                                <canvas id="turn1" width="10" height="10">turn of player 1</canvas>
+                            </div>
+                            <div id="score1"></div>
+                        </div>
+                        <div class="current-score">
+                            <p>CURRENT</p>
+                            <div id="currentScore1">0</div>
+                        </div>
+                    </ion-col>
+                    <ion-col class="coldice">
+                        <canvas id="canvas" width="70" height="70">
+                            dé
+                        </canvas>
+                        <div class="dice-cell">
+                            <button id="dice"><img src="images/sync-outline.svg" alt="lancé le dé" id="dice-icon">ROLL DICE</button>
+                            <button id="hold"><img src="images/download-outline.svg" alt="récolter" id="hold-icon"> HOLD</button>
+                        </div>
+                    </ion-col>
+                    <ion-col class="col2">
+                        <div class="player-cell">
+                            <div id="Player2">PLAYER 2
+                                <canvas id="turn2" width="10" height="10">turn of player 2</canvas>
+                            </div>
+                            <div id="score2"></div>
+                        </div>
+                        <div class="current-score">
+                            <p>CURRENT</p>
+                            <div id="currentScore2">0</div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-content>
+        </ion-app>
+    </ion-grid>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="script/class.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
