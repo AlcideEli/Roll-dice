@@ -183,7 +183,6 @@ addEventListener('load', () => {
             currentScore2.innerHTML = 0;
             game = new Game();
             game.idGame++
-                console.log(game.idGame)
         }
     })
 
