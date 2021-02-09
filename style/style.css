@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+ion-row,
+ion-col {
+    font-family: 'Lato', sans-serif;
+}
+
+ion-col {
+    text-align: center;
+    padding: 0;
+}
+
+.main {
+    height: 100%;
+}
+
+.player-cell {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.dice-cell {
+    position: relative;
+    top: 30%;
+}
+
+.current-score {
+    width: 6rem;
+    height: 4rem;
+    position: relative;
+    top: 30%;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    background: rgb(233, 75, 75);
+    border-radius: 2px;
+}
+
+.current-score p {
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    color: rgb(34, 34, 34);
+    padding-top: .5rem;
+}
+
+#newGame,
+#dice,
+#hold {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+#newGame-icon,
+#dice-icon,
+#hold-icon {
+    width: 25px;
+    margin-right: 5px;
+    font-weight: 100;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#score1,
+#score2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: rgb(233, 75, 75);
+}
+
+#dicePlayer {
+    display: none;
+    position: relative;
+    top: 20%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px rgb(179, 179, 179);
+}
+
+canvas {
+    position: relative;
+    top: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(196, 196, 196);
+}
+
+@media (max-width: 426px) {
+    .player-cell {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .player-cell {
+        font-size: 1.1rem;
+    }
+}
